@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action - recebe o endereço do arquivo/ página para onde os dados serão enviados. -->
+    <form action="https://formsubmit.co/guilherme.b.nery6@aluno.senai.br" method="post">
+        <!-- ! Formulário -->
+        <h1>Formulário de Contato</h1>
+        <!-- Nome -->
+        <div> 
+            <label for="name">Nome</label>
+        </div>
+        <input type="text" name="name" id="name" 
+        placeholder="Nome e sobrenome" maxlength="30" style="border-radius: 12px;">
+        <!-- maxlength = VARCHAR(30) -->
+            <br><br>
+            <!-- E-mail -->
+            <div>
+                <label for="email">E-mail</label>
+            </div>
+             
+             <input type="email" name="email" id="email" placeholder="email@email.com" maxlength="50" required autocomplete>
+
+             <!-- autocomplete: Quando o usuário preenche o campo e envia o formulário. os dados ficam salvos; assim, caso ele queira enviar o formulário novamente, não é necessário redigitar todos os dados. -->
+             <br><br>
+
+             <!-- Telefone -->
+             <div>
+                <label for="tel">Telefone</label>
+            </div>
+             <input type="tel" name="tel" id="tel" placeholder="(xx)xxxxx-xxxx"
+             maxlength="11" required autocomplete="on">
+             <br><br>
+
+             <!-- Currículo -->
+            <div>
+             <label for="curriculum">Currículo</label>
+            </div>
+             <input type="file" name="curriculum"
+             id="curriculum">
+             <br><br>
+
+             <!-- Mensagem -->
+             <div>
+                <label for="message">Mensagem</label>
+            </div>
+             <textarea name="massage" id="message" placeholder="Digite aqui sua mensagem" rows="5" cols="20"></textarea>
+             <br>
+             <!--Submit-->
+             <label for="submit"></label>
+             <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
+             <input type="submit" id="submit" style="border-radius: 5px;">
+             
+
+
+
+    </form>
+
+</body>
+</html>
